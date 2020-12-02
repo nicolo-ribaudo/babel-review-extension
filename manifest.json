@@ -1,0 +1,12 @@
+{
+  "name": "Babel Fixtures Review",
+  "version": "1.0",
+  "description": "Shows the input file when reviewing changes affecting the output of a fixture in the babel/babel repository",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/babel/babel/pull/*", "https://github.com/babel/babel-polyfills/pull/*"],
+      "js": ["scripts/show-input.js"]
+    }
+  ]
+}
