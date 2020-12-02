@@ -2,6 +2,8 @@
 
 A Chrome extension that makes it easier to review Babel PRs.
 
+![](https://raw.githubusercontent.com/nicolo-ribaudo/babel-review-extension/main/image.gif)
+
 ## Installation
 
 - Click on the green "Clone or download" button
