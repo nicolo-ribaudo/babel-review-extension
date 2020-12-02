@@ -95,6 +95,7 @@ function ensureStickyView() {
   $stickyView.style.bottom = "0px";
   $stickyView.style.height = "40vh";
   $stickyView.style.width = "100%";
+  $stickyView.style.overflowY = "auto";
   $stickyView.style.resize = "vertical";
   $stickyView.style.padding = "20px";
   $stickyView.style.backgroundColor = "var(--color-bg-primary)";
