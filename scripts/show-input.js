@@ -84,7 +84,7 @@ function ensureStickyView() {
   /** @type {HTMLDivElement} */
   let $stickyView = document.querySelector("#brw-sticky-view");
   if ($stickyView) {
-    $stickyView.style.display = "block";
+    $stickyView.style.display = "flex";
     return $stickyView.querySelector("#brw-sticky-view-contents");
   }
 
@@ -96,10 +96,13 @@ function ensureStickyView() {
   $stickyView.style.height = "40vh";
   $stickyView.style.width = "100%";
   $stickyView.style.overflowY = "auto";
-  $stickyView.style.resize = "vertical";
-  $stickyView.style.padding = "20px";
+  $stickyView.style.padding = "20px 32px";
   $stickyView.style.backgroundColor = "var(--color-bg-primary)";
   $stickyView.style.boxShadow = "0px 15px 20px 0px black";
+  $stickyView.style.borderTop = "1px solid var(--color-border-primary)";
+  $stickyView.style.display = "flex";
+  $stickyView.style.alignItems = "flex-start";
+  $stickyView.style.justifyContent = "space-between";
 
   const $stickyViewContents = document.createElement("pre");
   $stickyViewContents.id = "brw-sticky-view-contents";
@@ -107,9 +110,7 @@ function ensureStickyView() {
 
   const $stickyViewClose = document.createElement("button");
   $stickyViewClose.textContent = "Close";
-  $stickyViewClose.style.position = "absolute";
-  $stickyViewClose.style.top = "10px";
-  $stickyViewClose.style.right = "10px";
+  $stickyViewClose.className = "btn btn-sm";
   $stickyViewClose.addEventListener("click", () => {
     $stickyView.style.display = "none";
   });
