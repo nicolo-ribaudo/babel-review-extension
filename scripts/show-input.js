@@ -97,9 +97,9 @@ function ensureStickyView() {
   $stickyView.style.width = "100%";
   $stickyView.style.overflowY = "auto";
   $stickyView.style.padding = "20px 32px";
-  $stickyView.style.backgroundColor = "var(--color-bg-primary)";
+  $stickyView.style.backgroundColor = "var(--color-canvas-default, #fff)";
   $stickyView.style.boxShadow = "0px 15px 20px 0px black";
-  $stickyView.style.borderTop = "1px solid var(--color-border-primary)";
+  $stickyView.style.borderTop = "1px solid var(--color-border-default, #d0d7de)";
   $stickyView.style.display = "flex";
   $stickyView.style.alignItems = "flex-start";
   $stickyView.style.justifyContent = "space-between";
